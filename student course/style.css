@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+}
+
+.site-header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.site-header p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #cfd8dc;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #34495e;
+}
+
+.tab-btn {
+  flex: 1;
+  min-width: 150px;
+  padding: 14px 10px;
+  background: transparent;
+  color: #ecf0f1;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+  background: #3d566e;
+}
+
+.tab-btn.active {
+  border-bottom: 3px solid #1abc9c;
+  background: #3d566e;
+}
+
+main {
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.tab-content {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  color: #2c3e50;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1abc9c;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+}
+
+button {
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #16a085;
+}
+
+#cancelEditBtn {
+  background: #7f8c8d;
+}
+
+#cancelEditBtn:hover {
+  background: #626d6d;
+}
+
+.success-msg {
+  color: #27ae60;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #ecf0f1;
+}
+
+td button {
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.delete-btn {
+  background: #e74c3c;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.edit-btn {
+  background: #f39c12;
+}
+
+.edit-btn:hover {
+  background: #d68910;
+}
+
+/* Course cards */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 15px;
+}
+
+.course-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  background: #fafafa;
+}
+
+.course-card h4 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.course-card p {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.course-card button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#noEnrollMsg {
+  color: #777;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #888;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tab-btn {
+    font-size: 13px;
+    padding: 12px 6px;
+  }
+  .site-header h1 {
+    font-size: 20px;
+  }
+}
