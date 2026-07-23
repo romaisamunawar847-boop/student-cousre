@@ -1,12 +1,12 @@
 # Student Course Management System
 
-## 📌 Project Overview
+##  Project Overview
 
 The Student Course Management System is a software application designed to manage student and course-related information efficiently.
 
 This system helps manage student records, course details, and enrollment information in an organized way.
 
-## ✨ Features
+##  Features
 
 - Add new students
 - View student records
@@ -18,14 +18,14 @@ This system helps manage student records, course details, and enrollment informa
 - User-friendly interface
 - Organized student and course management
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Java
 - Object-Oriented Programming (OOP)
 - GUI
 - File Handling / Database (if applicable)
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 student-course/
